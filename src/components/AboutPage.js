@@ -5,6 +5,7 @@ import '../styles/Header.css';
 import Footer from "./Footer";
 import '../styles/Footer.css';
 import AboutBanner from "./AboutBanner.css";
+import Dropdown from "./Dropdown";
 
 class AboutPage extends React.Component{
     render(){
@@ -15,7 +16,9 @@ class AboutPage extends React.Component{
                     <AboutBanner />
                 </header>
                 <main>
-
+                    {about.map((about, index) =>(
+                        <Dropdown key={`${index}_collapse`} scaleValue={about}/>
+                    ))}
                 </main>
                 <footer>
                     <Footer />
