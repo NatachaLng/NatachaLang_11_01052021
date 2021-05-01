@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import {NavLink} from "react-router-dom";
+import React from "react";
+//import {NavLink} from "react-router-dom";
 import "../styles/Header.css"
 import logo from '../assets/img/logo.png'
 
-class Header extends Component{
+class Header extends React.Component{
     render() {
         return (
             <nav className="main-nav">
