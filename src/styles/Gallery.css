@@ -1,0 +1,60 @@
+.gallery {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.gallery,
+.gallery img {
+    width: 100%;
+    height: 255px;
+    border-radius: 25px;
+}
+
+.gallery img {
+    object-fit: cover;
+}
+
+.gallery .arrow{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.gallery .arrow:hover {
+    cursor: pointer;
+    color: #ff6060;
+}
+
+.gallery .arrow-left {
+    left: 6px;
+}
+
+.gallery .arrow-right {
+    right: 6px;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery {
+        margin-bottom: 25px;
+    }
+
+    .gallery,
+    .gallery img {
+        height: 415px;
+    }
+
+    .gallery arrow {
+        font-size: 4rem;
+    }
+
+    .gallery .arrow-left {
+        left: 25px;
+    }
+
+    .gallery .arrow-right {
+        right: 25px;
+    }
+}

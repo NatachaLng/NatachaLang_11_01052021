@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/HostInfos.css"
 
 class HostInfos extends React.Component{
 
