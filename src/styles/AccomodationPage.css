@@ -1,0 +1,48 @@
+.location-header h2 {
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.location-header p {
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.location-header .tag {
+    margin: 10px 10px 10px 0;
+}
+
+.location-header-host {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+    .location-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-bottom: 25px;
+    }
+
+    .location-header-host {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .location-details .dropdown {
+        width: 47%;
+    }
+}
