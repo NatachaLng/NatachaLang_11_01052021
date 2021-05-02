@@ -1,17 +1,11 @@
 import React from "react";
-import Header from "./Header";
-import '../styles/Header.css';
-import Footer from "./Footer";
-import '../styles/Footer.css';
 import '../styles/ErrorPage.css';
+import {BrowserRouter, NavLink} from "react-router-dom";
 
 class ErrorPage extends React.Component{
     render() {
         return(
             <div>
-            <header>
-                <Header />
-            </header>
             <main>
                 <div className="error_page">
                     <div className="error">
@@ -20,14 +14,13 @@ class ErrorPage extends React.Component{
                     <div className="error_message">
                         Oups! La page que vous demandez n'existe pas.
                     </div>
+                    <BrowserRouter>
                     <div className="redirection">
-                        <a href='#'>Retouner à la page d'accueil</a>
+                        <NavLink to='/'>Retouner à la page d'accueil</NavLink>
                     </div>
+                    </BrowserRouter>
                 </div>
             </main>
-            <footer>
-                <Footer />
-            </footer>
             </div>
         )
     }

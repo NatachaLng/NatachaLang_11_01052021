@@ -1,5 +1,5 @@
 import React from "react";
-//import {NavLink} from "react-router-dom";
+import {BrowserRouter, NavLink} from "react-router-dom";
 import "../styles/Header.css"
 import logo from '../assets/img/logo.png'
 
@@ -9,12 +9,14 @@ class Header extends React.Component{
             <nav className="main-nav">
                     <img src={logo} alt="Kasa" />
                 <ul>
-                    <a href='#'> <li>
+                    <BrowserRouter>
+                    <NavLink to='/'> <li>
                         Accueil
-                    </li></a>
-                    <a href='#'> <li>
+                    </li></NavLink>
+                    <NavLink to='/About'> <li>
                         A propos
-                    </li></a>
+                    </li></NavLink>
+                    </BrowserRouter>
                 </ul>
             </nav>
         );

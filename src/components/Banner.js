@@ -4,11 +4,13 @@ import "../styles/Banner.css";
 
 class Banner extends React.Component {
     render() {
+        const { content, imgSrc, imgAlt } = this.props;
+
         return (
             <div className="banner">
                 <div className="banner-cover"></div>
-                <img src={img} alt="banner homepage" />
-                <h2>Chez vous, partout et ailleurs</h2>
+                <img src={imgSrc} alt={imgAlt} />
+                {content ? <h2>{content}</h2> : null}
             </div>
         );
     }

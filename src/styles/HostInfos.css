@@ -1,0 +1,32 @@
+.host {
+    display: flex;
+    align-items: center;
+}
+
+.host p {
+    color: #ff6060;
+    margin-right: 10px;
+}
+
+.host span {
+    display: block;
+    text-align: right;
+    font-weight: 500;
+}
+
+.host img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .host img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .host span {
+        margin: 5px 0;
+    }
+}
