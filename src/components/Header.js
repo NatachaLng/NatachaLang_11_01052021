@@ -6,19 +6,19 @@ import logo from '../assets/img/logo.png'
 class Header extends React.Component{
     render() {
         return (
+            <BrowserRouter>
             <nav className="main-nav">
-                    <img src={logo} alt="Kasa" />
+                    <NavLink to='/'><img src={logo} alt="Kasa" /></NavLink>
                 <ul>
-                    <BrowserRouter>
                     <NavLink to='/'> <li>
                         Accueil
                     </li></NavLink>
                     <NavLink to='/About'> <li>
                         A propos
                     </li></NavLink>
-                    </BrowserRouter>
                 </ul>
             </nav>
+            </BrowserRouter>
         );
     }
 }

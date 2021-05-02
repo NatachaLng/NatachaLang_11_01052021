@@ -1,6 +1,6 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
-import "../styles/AccomodationPage.css";
+import "../styles/AccommodationPage.css";
 import { data } from "../data"
 
 import Gallery from "./Gallery";
@@ -9,7 +9,7 @@ import HostInfos from "./HostInfos";
 import Rating from "./Rating";
 import Dropdown from "./Dropdown";
 
-class AccomodationPage extends React.Component {
+class AccommodationPage extends React.Component {
     render() {
         const idParam = this.props.match.params.id;
         if (!data.some((elt) => elt.id === idParam)) return <Redirect to="/404" />;
@@ -58,4 +58,4 @@ class AccomodationPage extends React.Component {
     }
 }
 
-export default AccomodationPage;
+export default AccommodationPage;

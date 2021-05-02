@@ -1,12 +1,9 @@
 import React from "react";
-import "../css/Gallery.css";
-import arrow_left from "../assets/svg/chevron-left-solid.svg"
-import arrow_right from "../assets/svg/chevron-right-solid.svg"
+import "../styles/Gallery.css";
 
-class Gallery extends React.Component {
-    state = {
-        currentPicture: 0,
-    };
+class Gallery extends React.Component {  state = {
+    currentPicture: 0,
+};
 
     goToPreviousImage = () => {
         this.setState((prevState) => ({
@@ -35,20 +32,20 @@ class Gallery extends React.Component {
                 <img src={images[currentPicture]} alt={`location`} />
 
                 {images.length > 1 && (
-                    <img
-                        src={arrow_left}
-                        className='arrow arrow-left'
+                    <span
+                        className="fas fa-chevron-left"
                         onClick={() => this.goToPreviousImage()}
-                    ></img>
+                    ></span>
                 )}
                 {images.length > 1 && (
-                    <img
-                        src={arrow_right}
-                        className='arrow arrow-right'
+                    <span
+                        className="fas fa-chevron-right"
                         onClick={() => this.goToNextImage()}
-                    ></img>
+                    ></span>
                 )}
             </div>
         );
     }
 }
+
+export default Gallery

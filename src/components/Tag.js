@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Tag.css";
+import "../styles/Tag.css";
 
 class Tag extends React.Component {
     render() {
@@ -8,6 +8,5 @@ class Tag extends React.Component {
         return <div className="tag">{content}</div>;
     }
 }
-
 
 export default Tag;

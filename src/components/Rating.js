@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Rating.css";
+import "../styles/Rating.css";
 import full_star from '../assets/svg/red-star-solid.svg'
 import light_star from '../assets/svg/light-star-solid.svg'
 
