@@ -1,3 +1,9 @@
+.location-page{
+    width:90% ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .location-header h2 {
     color: #ff6060;
     font-weight: 500;
