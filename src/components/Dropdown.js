@@ -4,41 +4,44 @@ import down_arrow from '../assets/svg/chevron-down-solid.svg'
 import '../styles/Dropdown.css'
 
 class Dropdown extends React.Component {
+    state = {
+        isOpen: false,
+    };
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            active: false
-        }
-    }
-
-    callActiveCollapse() {
-        if (this.state.active) {
-            this.setState({active: false})
-        }
-        else {
-            this.setState({active: true})
-        }
-    }
+    toggleList = () => {
+        this.setState((prevState) => ({
+            isOpen: prevState.isOpen ? false : true,
+        }));
+    };
 
     render() {
-        let data = this.props.scaleValue
-        let content = data.content
+        const { title, content } = this.props;
+        const { isOpen } = this.state;
+
         return (
-            <>
-                <div className="dropdown">
-                    <div className="dropdown_top">
-                        <p>{data.title}</p>
-                        <img src={this.state.active ? up_arrow : down_arrow} alt="Arrow icon" className="arrow" onClick={() => (this.callActiveCollapse())}/>
-                    </div>
-                    <div className={this.state.active ? "dropdown_content" : "dropdown_content__active"}>
-                        {typeof content === 'object' ? <ul>{content.map((content, index) =>(
-                            <li key={`${index}_tag`}>{content}</li>
-                        ))}</ul> : <p>{content}</p>}
-                    </div>
-                </div>
-            </>
-        )
+            <div className="dropdown">
+                <h3 onClick={() => this.toggleList()}>
+                    {title}
+                    <span
+                        className={isOpen ? {up_arrow} : {down_arrow} }
+                    ></span>
+                </h3>
+
+                {Array.isArray(content) ? (
+                    <ul
+                        className={`dropdown-list ${isOpen ? "drop-open" : "drop-close"}`}
+                    >
+                        {content.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                ) : (
+                    <p className={`dropdown-list ${isOpen ? "drop-open" : "drop-close"}`}>
+                        {content}
+                    </p>
+                )}
+            </div>
+        );
     }
 }
 

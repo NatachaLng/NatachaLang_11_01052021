@@ -13,8 +13,8 @@ class AboutPage extends React.Component{
                         imgSrc="../assets/img/about-banner.jpg"
                         imgAlt="Landscape"
                     />
-                    {about.map((about, index) =>(
-                        <Dropdown key={`${index}_collapse`} scaleValue={about}/>
+                    {about.map((elt) => (
+                        <Dropdown key={elt.id} title={elt.title} content={elt.content} />
                     ))}
                 </main>
             </div>
