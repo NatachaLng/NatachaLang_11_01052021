@@ -1,7 +1,8 @@
 import React from "react";
-import up_arrow from '../assets/svg/chevron-up-solid.svg';
-import down_arrow from '../assets/svg/chevron-down-solid.svg';
 import '../styles/Dropdown.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 class Dropdown extends React.Component {
     state = {
@@ -21,11 +22,10 @@ class Dropdown extends React.Component {
         return (
             <div className="dropdown">
                 <h3 onClick={() => this.toggleList()}>
-                    {title}
-                    <img
-                        src={isOpen ? {up_arrow} : {down_arrow} }
-                    ></img>
-                </h3>
+                    {title}                </h3>
+                    <FontAwesomeIcon
+                        icon={isOpen ? {faChevronUp} : {faChevronDown} } className='arrow_dropdown'
+                    />
 
                 {Array.isArray(content) ? (
                     <ul

@@ -3,6 +3,7 @@ import {about} from "../data";
 import Dropdown from "./Dropdown";
 import Banner from "./Banner";
 import '../styles/AboutPage.css'
+import img from '../assets/img/about-banner.jpg'
 
 class AboutPage extends React.Component{
     render(){
@@ -11,7 +12,7 @@ class AboutPage extends React.Component{
                 <main>
                     <Banner
                         content=""
-                        imgSrc="../assets/img/about-banner.jpg"
+                        imgSrc={img}
                         imgAlt="Landscape"
                     />
                     <div className="dropdown-container">

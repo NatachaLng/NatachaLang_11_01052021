@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import '../styles/Banner.css';
 import Card from "./Card";
 import '../styles/Card.css';
+import img from "../assets/img/homepage-banner.jpg"
 
 
 class Homepage extends React.Component{
@@ -12,7 +13,7 @@ class Homepage extends React.Component{
                 <main>
                     <Banner
                         content="Chez vous, partout et ailleurs"
-                        imgSrc="../assets/img/homepage-banner.jpg"
+                        imgSrc={img}
                         imgAlt="Landscape"
                     />
                     <Card />

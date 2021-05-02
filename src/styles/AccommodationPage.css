@@ -4,6 +4,23 @@
     margin-right: auto;
 }
 
+.dropdown {
+    max-width: 80%;
+}
+
+.dropdown h3 {
+    max-width: 100%;
+}
+
+.dropdown h3:hover {
+    max-width: 100%;
+}
+
+
+.dropdown-list {
+    max-width: 100%;
+}
+
 .location-header h2 {
     color: #ff6060;
     font-weight: 500;
@@ -48,7 +65,4 @@
         margin: 0;
     }
 
-    .location-details .dropdown {
-        width: 47%;
-    }
 }
