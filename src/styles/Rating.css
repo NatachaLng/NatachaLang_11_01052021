@@ -1,11 +1,14 @@
 .rate {
     min-width: 160px;
+    margin-bottom: 20px;
+
 }
 
 .rate span {
     font-size: 1rem;
     color: #e3e3e3;
     margin-right: 5px;
+
 }
 
 .rate span:last-child {

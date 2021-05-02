@@ -1,16 +1,15 @@
 .dropdown {
-    margin-right: 20px;
-    margin-left: 20px;
-    min-width: 40%;
+    min-width: 45%;
     border-radius: 5px;
+    flex-grow: 1;
 }
 
 .dropdown h3 {
-    min-width: 40%;
+    min-width: 45%;
     height: 30px;
     border-radius: 5px;
     background: #ff6060;
-    color: #fff;
+    color: white;
     font-weight: 500;
     font-size: 1rem;
     padding: 0 15px;
@@ -22,8 +21,6 @@
 
 .dropdown h3:hover {
     cursor: pointer;
-    background: #fff;
-    color: #ff6060;
     border: 2px solid #ff6060;
 }
 
@@ -33,7 +30,7 @@
 
 .dropdown-list {
     background: #f7f7f7;
-    min-width: 40%;
+    min-width: 45%;
     padding: 25px 12px;
     border-radius: 0 0 5px 5px;
     color: #ff6060;
@@ -46,11 +43,13 @@
 }
 
 .dropdown-list.drop-close {
+    min-width: 45%;
     display: none;
 }
 
 .dropdown-list.drop-open {
-    display: open;
+    min-width: 45%;
+    display: block;
 }
 
 .arrow_dropdown{

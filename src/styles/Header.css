@@ -1,6 +1,8 @@
 li{
     list-style: none;
-    margin-left: 25px;
+    margin-right: 30px;
+    min-width: 80px;
+    font-size: 1rem;
 }
 
 a{
@@ -12,16 +14,15 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     margin-top: 15px;
     padding: 0 20px;
 }
 
 .main-nav img {
-    width: 145px;
+    width: 100px;
 }
 
 .main-nav ul {
@@ -40,10 +41,17 @@ a{
 }
 
 .main-nav li:nth-child(2) {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
+
+    li{
+        list-style: none;
+        margin-right: 100px;
+        font-size: 1.5rem;
+    }
+
     .main-nav {
         margin-bottom: 60px;
     }

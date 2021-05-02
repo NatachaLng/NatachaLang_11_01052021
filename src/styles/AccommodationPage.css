@@ -1,24 +1,15 @@
+html{
+    width: 100%;
+}
+
+.dropdown-li{
+    font-size: 1rem;
+}
+
 .location-page{
     width:90% ;
     margin-left: auto;
     margin-right: auto;
-}
-
-.dropdown {
-    max-width: 80%;
-}
-
-.dropdown h3 {
-    max-width: 100%;
-}
-
-.dropdown h3:hover {
-    max-width: 100%;
-}
-
-
-.dropdown-list {
-    max-width: 100%;
 }
 
 .location-header h2 {
@@ -46,11 +37,7 @@
     align-items: center;
 }
 
-.location-details {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+
 
 @media screen and (min-width: 768px) {
     .location-header {
@@ -63,6 +50,15 @@
     .location-header-host {
         flex-direction: column;
         margin: 0;
+    }
+    .location-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .dropdown-li{
+        font-size: 1.2rem;
     }
 
 }

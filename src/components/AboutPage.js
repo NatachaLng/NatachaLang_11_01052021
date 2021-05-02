@@ -8,7 +8,6 @@ import img from '../assets/img/about-banner.jpg'
 class AboutPage extends React.Component{
     render(){
         return (
-            <div>
                 <main>
                     <Banner
                         content=""
@@ -21,7 +20,6 @@ class AboutPage extends React.Component{
                     ))}
                     </div>
                 </main>
-            </div>
         )
     }
 }

@@ -29,12 +29,10 @@ class AccommodationPage extends React.Component {
 
         return (
             <div className="location-page">
-                <header>
                     <Gallery images={pictures} />
-                </header>
 
                 <main className="main-location">
-                    <header className="location-header">
+                    <div className="location-header">
                         <div>
                             <h2>{title}</h2>
                             <p>{location}</p>
@@ -46,7 +44,7 @@ class AccommodationPage extends React.Component {
                             <HostInfos name={host.name} img={host.picture} />
                             <Rating fill={rating} />
                         </div>
-                    </header>
+                    </div>
 
                     <section className="location-details">
                         <Dropdown title="Description" content={description} />

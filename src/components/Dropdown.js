@@ -22,17 +22,17 @@ class Dropdown extends React.Component {
         return (
             <div className="dropdown">
                 <h3 onClick={() => this.toggleList()}>
-                    {title}                </h3>
-                    <FontAwesomeIcon
-                        icon={isOpen ? {faChevronUp} : {faChevronDown} } className='arrow_dropdown'
-                    />
+                    {title}
+                    {isOpen ? <FontAwesomeIcon icon={faChevronUp} className='arrow_dropdown' /> : <FontAwesomeIcon icon={faChevronDown} className='arrow_dropdown' />}
+                </h3>
+
 
                 {Array.isArray(content) ? (
                     <ul
                         className={`dropdown-list ${isOpen ? "drop-open" : "drop-close"}`}
                     >
                         {content.map((item, index) => (
-                            <li key={index}>{item}</li>
+                            <li key={index} className="dropdown-li">{item}</li>
                         ))}
                     </ul>
                 ) : (

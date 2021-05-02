@@ -4,6 +4,7 @@ import '../styles/Banner.css';
 import Card from "./Card";
 import '../styles/Card.css';
 import img from "../assets/img/homepage-banner.jpg"
+import '../styles/Homepage.css';
 
 
 class Homepage extends React.Component{
