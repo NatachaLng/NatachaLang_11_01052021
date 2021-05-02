@@ -1,6 +1,6 @@
 import React from "react";
 import up_arrow from '../assets/svg/chevron-up-solid.svg';
-import down_arrow from '../assets/svg/chevron-down-solid.svg'
+import down_arrow from '../assets/svg/chevron-down-solid.svg';
 import '../styles/Dropdown.css'
 
 class Dropdown extends React.Component {
@@ -22,9 +22,9 @@ class Dropdown extends React.Component {
             <div className="dropdown">
                 <h3 onClick={() => this.toggleList()}>
                     {title}
-                    <span
-                        className={isOpen ? {up_arrow} : {down_arrow} }
-                    ></span>
+                    <img
+                        src={isOpen ? {up_arrow} : {down_arrow} }
+                    ></img>
                 </h3>
 
                 {Array.isArray(content) ? (

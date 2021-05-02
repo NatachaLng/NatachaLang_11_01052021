@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/Gallery.css";
+import left_arrow from '../assets/svg/chevron-left-solid.svg';
+import right_arrow from '../assets/svg/chevron-right-solid.svg'
 
 class Gallery extends React.Component {  state = {
     currentPicture: 0,
@@ -29,19 +31,21 @@ class Gallery extends React.Component {  state = {
 
         return (
             <div className="gallery">
-                <img src={images[currentPicture]} alt={`location`} />
+                <img class='gallery_image' src={images[currentPicture]} alt={`location`} />
 
                 {images.length > 1 && (
-                    <span
-                        className="fas fa-chevron-left"
+                    <img
+                        className='left-arrow arrow'
+                        src={left_arrow}
                         onClick={() => this.goToPreviousImage()}
-                    ></span>
+                    ></img>
                 )}
                 {images.length > 1 && (
-                    <span
-                        className="fas fa-chevron-right"
+                    <img
+                        className='right-arrow arrow'
+                        src={right_arrow}
                         onClick={() => this.goToNextImage()}
-                    ></span>
+                    ></img>
                 )}
             </div>
         );
