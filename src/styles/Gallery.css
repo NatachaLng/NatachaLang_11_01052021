@@ -14,7 +14,7 @@
     object-fit: cover;
 }
 
-.gallery .arrow{
+.gallery .fas {
     color: #fff;
     position: absolute;
     top: 50%;
@@ -23,16 +23,16 @@
     transition: color 0.3s;
 }
 
-.gallery .arrow:hover {
+.gallery .fas:hover {
     cursor: pointer;
     color: #ff6060;
 }
 
-.gallery .arrow-left {
+.gallery .fa-chevron-left {
     left: 6px;
 }
 
-.gallery .arrow-right {
+.gallery .fa-chevron-right {
     right: 6px;
 }
 
@@ -46,15 +46,15 @@
         height: 415px;
     }
 
-    .gallery arrow {
+    .gallery .fas {
         font-size: 4rem;
     }
 
-    .gallery .arrow-left {
+    .gallery .fa-chevron-left {
         left: 25px;
     }
 
-    .gallery .arrow-right {
+    .gallery .fa-chevron-right {
         right: 25px;
     }
 }

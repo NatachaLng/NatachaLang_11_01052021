@@ -2,3 +2,27 @@
     min-width: 160px;
 }
 
+.rate span {
+    font-size: 1rem;
+    color: #e3e3e3;
+    margin-right: 5px;
+}
+
+.rate span:last-child {
+    margin-right: 0;
+}
+
+.rate span.fill {
+    color: #ff6060;
+}
+
+@media screen and (min-width: 768px) {
+    .rate span {
+        font-size: 1.3rem;
+        margin-right: 10px;
+    }
+
+    .rate span:last-child {
+        margin-right: 0;
+    }
+}
