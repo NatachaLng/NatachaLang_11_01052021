@@ -36,3 +36,14 @@ a:active{
     text-decoration: underline;
     color: #FF6060 !important;
 }
+
+@media screen and (max-width: 768px) {
+    .error{
+        font-size: 140px;
+    }
+
+    .error_message{
+        font-size: 26px;
+    }
+
+}

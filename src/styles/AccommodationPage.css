@@ -6,30 +6,30 @@ html{
     font-size: 1rem;
 }
 
-.location-page{
+.accommodation-page{
     width:90% ;
     margin-left: auto;
     margin-right: auto;
 }
 
-.location-header h2 {
+.accommodation-header h2 {
     color: #ff6060;
     font-weight: 500;
     font-size: 2rem;
 }
 
-.location-header p {
+.accommodation-header p {
     color: #ff6060;
     font-weight: 500;
     font-size: 1.2rem;
     margin-top: 5px;
 }
 
-.location-header .tag {
+.accommodation-header .tag {
     margin: 10px 10px 10px 0;
 }
 
-.location-header-host {
+.accommodation-header-host {
     margin: 20px 0;
     display: flex;
     flex-direction: row-reverse;
@@ -40,18 +40,18 @@ html{
 
 
 @media screen and (min-width: 768px) {
-    .location-header {
+    .accommodation-header {
         display: flex;
         justify-content: space-between;
         align-items: stretch;
         margin-bottom: 25px;
     }
 
-    .location-header-host {
+    .accommodation-header-host {
         flex-direction: column;
         margin: 0;
     }
-    .location-details {
+    .accommodation-details {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
