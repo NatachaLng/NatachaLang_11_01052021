@@ -14,11 +14,9 @@ class ErrorPage extends React.Component{
                     <div className="error_message">
                         Oups! La page que vous demandez n'existe pas.
                     </div>
-                    <BrowserRouter>
                     <div className="redirection">
                         <NavLink to='/'>Retouner à la page d'accueil</NavLink>
                     </div>
-                    </BrowserRouter>
                 </div>
             </main>
             </div>
