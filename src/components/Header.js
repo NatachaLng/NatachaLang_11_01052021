@@ -6,7 +6,6 @@ import logo from '../assets/img/logo.png'
 class Header extends React.Component{
     render() {
         return (
-            <BrowserRouter>
             <nav className="main-nav">
                     <NavLink to='/'><img src={logo} alt="Kasa" /></NavLink>
                 <ul>
@@ -18,7 +17,6 @@ class Header extends React.Component{
                     </li></NavLink>
                 </ul>
             </nav>
-            </BrowserRouter>
         );
     }
 }
