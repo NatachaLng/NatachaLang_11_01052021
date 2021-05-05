@@ -28,15 +28,17 @@ class Gallery extends React.Component {  state = {
     render() {
         const { images } = this.props;
         const { currentPicture } = this.state;
+        const title = this.props.title
 
         return (
             <div className="gallery">
-                <img class='gallery_image' src={images[currentPicture]} alt={`location`} />
+                <img class='gallery_image' src={images[currentPicture]} alt={title}/>
 
                 {images.length > 1 && (
                     <img
                         className='left-arrow arrow'
                         src={left_arrow}
+                        alt="Précédent"
                         onClick={() => this.goToPreviousImage()}
                     ></img>
                 )}
@@ -44,6 +46,7 @@ class Gallery extends React.Component {  state = {
                     <img
                         className='right-arrow arrow'
                         src={right_arrow}
+                        alt="Suivant"
                         onClick={() => this.goToNextImage()}
                     ></img>
                 )}

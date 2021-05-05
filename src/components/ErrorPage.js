@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/ErrorPage.css';
-import {BrowserRouter, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 class ErrorPage extends React.Component{
     render() {
