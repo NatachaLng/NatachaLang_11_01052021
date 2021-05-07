@@ -14,18 +14,14 @@ class App extends React.Component {
         return (
             <BrowserRouter>
                 <div>
-                    <header>
-                        <Header />
-                    </header>
+                    <Header />
                     <Switch>
                         <Route exact path="/" component={Homepage} />
                         <Route path="/about" component={AboutPage} />
                         <Route path="/accommodation/:id" render={(props) => <AccommodationPage{...props} />}/>
                         <Route path="*" component={ErrorPage} />
                     </Switch>
-                    <footer>
-                        <Footer />
-                    </footer>
+                    <Footer />
                 </div>
             </BrowserRouter>
         )
