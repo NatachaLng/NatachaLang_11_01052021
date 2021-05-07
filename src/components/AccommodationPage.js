@@ -10,12 +10,16 @@ import Rating from "./Rating";
 import Dropdown from "./Dropdown";
 
 class AccommodationPage extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.idParam = this.props.match.params.id;
+        this.currentLocation = data.filter((elt) => elt.id === this.idParam)[0];
+    }
+
+
     render() {
-        const idParam = this.props.match.params.id;
-        if (!data.some((elt) => elt.id === idParam)) return <Redirect to="/404" />;
-
-        const currentLocation = data.filter((elt) => elt.id === idParam)[0];
-
+        if (!data.some((elt) => elt.id === this.idParam)) return <Redirect to="/404" />;
         const {
             title,
             location,
@@ -25,7 +29,7 @@ class AccommodationPage extends React.Component {
             tags,
             rating,
             description,
-        } = currentLocation;
+        } = this.currentLocation;
 
         return (
             <div className="accommodation-page">

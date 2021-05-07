@@ -3,18 +3,22 @@ import "../styles/HostInfos.css"
 
 class HostInfos extends React.Component{
 
-    render(){
-        const { name, img } = this.props;
-        const firstname = name.split(" ")[0];
-        const lastname = name.split(" ")[1]
+    constructor(props) {
+        super(props);
+        this.name = this.props.name
+        this.img = this.props.img
+        this.firstname = this.name.split(" ")[0];
+        this.lastname = this.name.split(" ")[1]
+    }
 
+    render(){
         return(
             <div className="host">
                 <p>
-                    <span>{firstname ? firstname : ""}</span>
-                    <span>{lastname ? lastname : ""}</span>
+                    <span>{this.firstname ? this.firstname : ""}</span>
+                    <span>{this.lastname ? this.lastname : ""}</span>
                 </p>
-                <img src={img} alt={name} />
+                <img src={this.img} alt={this.name} />
             </div>
         )
     }

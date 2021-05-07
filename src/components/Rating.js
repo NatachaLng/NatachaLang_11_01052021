@@ -6,20 +6,30 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 
 class Rating extends React.Component {
-    render() {
-        const { fill } = this.props;
-        const starsClasses = [];
 
+    constructor(props) {
+        super(props);
+        this.fill = this.props.fill;
+        this.starsClasses = [];
+    }
+
+    componentDidMount(){
+        this.rating()
+    }
+
+    rating(){
         for (let i = 0; i < 5; i++) {
-            i < fill
-                ? starsClasses.push('fas fa-star fill')
-                : starsClasses.push('fas fa-star empty');
+            i < this.fill
+                ? this.starsClasses.push('fas fa-star fill')
+                : this.starsClasses.push('fas fa-star empty');
         }
+    }
 
+    render() {
         return (
             <div className="rate">
-                {starsClasses.map((star, index) => (
-                    <FontAwesomeIcon key={index} icon={faStar} className={star} />
+                {this.starsClasses.map((star) => (
+                    <FontAwesomeIcon icon={faStar} className={star} />
                 ))}
             </div>
         );
