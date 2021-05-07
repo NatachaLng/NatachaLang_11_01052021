@@ -3,8 +3,8 @@
     left: 0;
     top: 0;
     width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
     border-radius: 25px;
@@ -13,8 +13,8 @@
 .banner,
 .banner img {
     width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     height: 111px;
     border-radius: 25px;
 }

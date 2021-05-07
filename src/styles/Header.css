@@ -14,15 +14,13 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 20px;
     margin-top: 15px;
-    padding: 0 20px;
 }
 
 .main-nav img {
     width: 100px;
+    margin-left: 20px;
 }
 
 .main-nav ul {
