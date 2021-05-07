@@ -10,49 +10,37 @@ import Rating from "./Rating";
 import Dropdown from "./Dropdown";
 
 class AccommodationPage extends React.Component {
-
     constructor(props) {
         super(props);
         this.idParam = this.props.match.params.id;
-        this.currentLocation = data.filter((elt) => elt.id === this.idParam)[0];
+		this.accommodation = data.find((elt) => elt.id === this.idParam);
     }
 
-
     render() {
-        if (!data.some((elt) => elt.id === this.idParam)) return <Redirect to="/404"/>;
-        const {
-            title,
-            location,
-            pictures,
-            host,
-            equipments,
-            tags,
-            rating,
-            description,
-        } = this.currentLocation;
+        if (!this.accommodation) return <Redirect to="/404" />;
 
-        return (
+		const { title, location, pictures, host, equipments, tags, rating, description } = this.accommodation;
+
+		return (
             <div className="accommodation-page">
-                <Gallery images={pictures}/>
-
+                <Gallery images={pictures} />
                 <main className="main-location">
                     <div className="accommodation-header">
                         <div>
                             <h2>{title}</h2>
                             <p>{location}</p>
                             {tags.map((tag, index) => (
-                                <Tag key={index} content={tag}/>
+                                <Tag key={index} content={tag} />
                             ))}
                         </div>
                         <div className="accommodation-header-host">
-                            <HostInfos name={host.name} img={host.picture}/>
-                            <Rating fill={rating}/>
+                            <HostInfos name={host.name} img={host.picture} />
+                            <Rating fill={rating} />
                         </div>
                     </div>
-
                     <section className="accommodation-details">
-                        <Dropdown title="Description" content={description}/>
-                        <Dropdown title="Equipements" content={equipments}/>
+                        <Dropdown title="Description" content={description} />
+                        <Dropdown title="Equipements" content={equipments} />
                     </section>
                 </main>
             </div>
