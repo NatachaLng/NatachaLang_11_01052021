@@ -6,7 +6,7 @@ class Footer extends React.Component {
     render() {
         return (
             <footer className="main-footer">
-                <img src={logo} alt="Kasa" />
+                <img src={logo} alt="Kasa"/>
                 <p>
                     <span className="far fa-copyright"></span> 2020 Kasa. All rights
                     reserved

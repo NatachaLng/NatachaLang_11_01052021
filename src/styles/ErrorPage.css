@@ -1,9 +1,9 @@
 a,
-a:active{
+a:active {
     color: #FF6060;
 }
 
-.error_page{
+.error_page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +11,7 @@ a:active{
     color: #FF6060;
 }
 
-.error{
+.error {
     font-style: normal;
     font-weight: bold;
     font-size: 288px;
@@ -19,7 +19,7 @@ a:active{
     color: #FF6060;
 }
 
-.error_message{
+.error_message {
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -27,7 +27,7 @@ a:active{
     color: #FF6060;
 }
 
-.redirection{
+.redirection {
     margin-top: 20px;
     font-style: normal;
     font-weight: 500;
@@ -38,11 +38,11 @@ a:active{
 }
 
 @media screen and (max-width: 768px) {
-    .error{
+    .error {
         font-size: 140px;
     }
 
-    .error_message{
+    .error_message {
         font-size: 26px;
     }
 

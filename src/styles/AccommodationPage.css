@@ -1,13 +1,13 @@
-html{
+html {
     width: 100%;
 }
 
-.dropdown-li{
+.dropdown-li {
     font-size: 1rem;
 }
 
-.accommodation-page{
-    width:90% ;
+.accommodation-page {
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -38,7 +38,6 @@ html{
 }
 
 
-
 @media screen and (min-width: 768px) {
     .accommodation-header {
         display: flex;
@@ -51,13 +50,14 @@ html{
         flex-direction: column;
         margin: 0;
     }
+
     .accommodation-details {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
     }
 
-    .dropdown-li{
+    .dropdown-li {
         font-size: 1.2rem;
     }
 

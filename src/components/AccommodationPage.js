@@ -1,7 +1,7 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
+import {Redirect} from "react-router-dom";
 import "../styles/AccommodationPage.css";
-import { data } from "../data"
+import {data} from "../data"
 
 import Gallery from "./Gallery";
 import Tag from "./Tag";
@@ -19,7 +19,7 @@ class AccommodationPage extends React.Component {
 
 
     render() {
-        if (!data.some((elt) => elt.id === this.idParam)) return <Redirect to="/404" />;
+        if (!data.some((elt) => elt.id === this.idParam)) return <Redirect to="/404"/>;
         const {
             title,
             location,
@@ -33,7 +33,7 @@ class AccommodationPage extends React.Component {
 
         return (
             <div className="accommodation-page">
-                    <Gallery images={pictures} />
+                <Gallery images={pictures}/>
 
                 <main className="main-location">
                     <div className="accommodation-header">
@@ -41,18 +41,18 @@ class AccommodationPage extends React.Component {
                             <h2>{title}</h2>
                             <p>{location}</p>
                             {tags.map((tag, index) => (
-                                <Tag key={index} content={tag} />
+                                <Tag key={index} content={tag}/>
                             ))}
                         </div>
                         <div className="accommodation-header-host">
-                            <HostInfos name={host.name} img={host.picture} />
-                            <Rating fill={rating} />
+                            <HostInfos name={host.name} img={host.picture}/>
+                            <Rating fill={rating}/>
                         </div>
                     </div>
 
                     <section className="accommodation-details">
-                        <Dropdown title="Description" content={description} />
-                        <Dropdown title="Equipements" content={equipments} />
+                        <Dropdown title="Description" content={description}/>
+                        <Dropdown title="Equipements" content={equipments}/>
                     </section>
                 </main>
             </div>

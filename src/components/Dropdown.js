@@ -1,8 +1,8 @@
 import React from "react";
 import '../styles/Dropdown.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faChevronUp} from '@fortawesome/free-solid-svg-icons'
+import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
 
 class Dropdown extends React.Component {
     state = {
@@ -16,14 +16,15 @@ class Dropdown extends React.Component {
     };
 
     render() {
-        const { title, content } = this.props;
-        const { isOpen } = this.state;
+        const {title, content} = this.props;
+        const {isOpen} = this.state;
 
         return (
             <div className="dropdown">
                 <h3 onClick={() => this.toggleList()}>
                     {title}
-                    {isOpen ? <FontAwesomeIcon icon={faChevronUp} className='arrow_dropdown' /> : <FontAwesomeIcon icon={faChevronDown} className='arrow_dropdown' />}
+                    {isOpen ? <FontAwesomeIcon icon={faChevronUp} className='arrow_dropdown'/> :
+                        <FontAwesomeIcon icon={faChevronDown} className='arrow_dropdown'/>}
                 </h3>
 
 

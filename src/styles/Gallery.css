@@ -3,7 +3,7 @@
     margin-bottom: 15px;
 }
 
-.arrow{
+.arrow {
     width: 50px;
     height: auto;
     color: #ffffff;
@@ -35,7 +35,7 @@
     left: 6px;
 }
 
-.right-arrow{
+.right-arrow {
     right: 6px;
 }
 
@@ -45,7 +45,7 @@
     }
 
     .gallery,
-    .gallery_image{
+    .gallery_image {
         height: 415px;
     }
 

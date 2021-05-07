@@ -1,9 +1,9 @@
-#cards-parent{
+#cards-parent {
     width: 335px;
     margin: auto;
 }
 
-.hotel-card{
+.hotel-card {
     position: relative;
     margin-top: 2rem;
     height: 255px;

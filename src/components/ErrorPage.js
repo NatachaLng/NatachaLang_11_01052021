@@ -2,23 +2,23 @@ import React from "react";
 import '../styles/ErrorPage.css';
 import {NavLink} from "react-router-dom";
 
-class ErrorPage extends React.Component{
+class ErrorPage extends React.Component {
     render() {
-        return(
+        return (
             <div>
-            <main>
-                <div className="error_page">
-                    <div className="error">
-                        404
+                <main>
+                    <div className="error_page">
+                        <div className="error">
+                            404
+                        </div>
+                        <div className="error_message">
+                            Oups! La page que vous demandez n'existe pas.
+                        </div>
+                        <div className="redirection">
+                            <NavLink to='/'>Retouner à la page d'accueil</NavLink>
+                        </div>
                     </div>
-                    <div className="error_message">
-                        Oups! La page que vous demandez n'existe pas.
-                    </div>
-                    <div className="redirection">
-                        <NavLink to='/'>Retouner à la page d'accueil</NavLink>
-                    </div>
-                </div>
-            </main>
+                </main>
             </div>
         )
     }

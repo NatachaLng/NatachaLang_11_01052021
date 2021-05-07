@@ -7,7 +7,7 @@ import img from "../assets/img/homepage-banner.jpg"
 import '../styles/Homepage.css';
 
 
-class Homepage extends React.Component{
+class Homepage extends React.Component {
     render() {
         return (
             <div>
@@ -17,7 +17,7 @@ class Homepage extends React.Component{
                         imgSrc={img}
                         imgAlt="Landscape"
                     />
-                    <Card />
+                    <Card/>
                 </main>
             </div>
         )
