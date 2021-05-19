@@ -29,7 +29,7 @@
 @media all and (min-width: 1200px) {
     #cards-parent {
         margin-top: 4rem;
-        width: 80%;
+        width: 85%;
         margin-right: auto;
         margin-left: auto;
         background-color: #F7F7F7;
@@ -44,7 +44,7 @@
         width: 100%;
         height: 255px;
         min-width: 200px;
-        max-width: 350px;
+        max-width: 340px;
         margin-top: 4rem;
         margin: 10px;
     }
