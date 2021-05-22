@@ -13,16 +13,16 @@ class App extends React.Component {
     render() {
         return (
             <BrowserRouter>
-                <div>
+                <>
                     <Header/>
                     <Switch>
                         <Route exact path="/" component={Homepage}/>
                         <Route path="/about" component={AboutPage}/>
-                        <Route path="/accommodation/:id" render={(props) => <AccommodationPage{...props} />}/>
+                        <Route path="/accommodation/:id" component={AccommodationPage}/>
                         <Route path="*" component={ErrorPage}/>
                     </Switch>
                     <Footer/>
-                </div>
+                </>
             </BrowserRouter>
         )
     }
